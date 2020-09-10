@@ -1,0 +1,29 @@
+<table>
+    <tbody>
+        <tr *ngFor="let post of (post$ | async).Data">
+          <td>{{post.person_code}}</td>
+          <td>{{post.full_name}}</td>
+          <td>{{post.mobile_phone}}</td>
+          <td>{{post.location}}</td>
+      </tr>
+    </tbody>
+    <tfoot class="ui-table-tfoot ng-star-inserted">
+        <tr>
+          <td colspan="50">
+            <div style="text-align: center">
+              <div style="display: inline-block">
+              </div>
+              <div class="custom-ng-star-inserted">
+                <div class="ui-inputgroup">
+                  <button (click)="search(true, false)" type="button" style="cursor: pointer;">Previous</button>&nbsp;
+                  <input type="number" name="inputTextInt" pinputtext="" placeholder="Enter page number" [(ngModel)]="page" style="width: 50px">
+                  <button (click)="search()" type="button" style="cursor: pointer;">Go</button>&nbsp;
+                  <button (click)="search(false, true)" type="button" style="cursor: pointer;">Next</button>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+</table>

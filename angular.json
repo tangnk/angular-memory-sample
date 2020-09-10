@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "wiki2"
+    }
+  },
+  "defaultProject": "wiki2",
+  "cli": {
+    "analytics": false
+  }
 }

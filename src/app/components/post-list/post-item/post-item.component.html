@@ -1,0 +1,18 @@
+<form class="form-inline">
+    <div class="form-group">
+      <input type="search"
+             class="form-control"
+             placeholder="Enter search string"
+             [formControl]="searchField">
+    </div>
+  </form>
+  <table>
+    <tbody>
+        <tr *ngFor="let post of (post$ | async).Data">
+          <td>{{post.person_code}}</td>
+          <td>{{post.full_name}}</td>
+          <td>{{post.mobile_phone}}</td>
+          <td>{{post.location}}</td>
+      </tr>
+    </tbody>
+</table>
