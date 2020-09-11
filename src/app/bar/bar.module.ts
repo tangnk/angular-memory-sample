@@ -1,4 +1,3 @@
-import { PostItemComponent } from './../components/post-list/post-item/post-item.component';
 import { SharedbModule } from './../shared/sharedb/sharedb.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -11,7 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
-  declarations: [BarComponent, PostItemComponent],
+  declarations: [BarComponent],
   imports: [
     CommonModule,
     FormsModule,
